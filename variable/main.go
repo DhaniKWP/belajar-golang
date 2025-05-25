@@ -4,6 +4,7 @@ import	"fmt"
 
 func main() {
 	withDataType()
+	withoutDataType()
 }
 
 func withDataType() {
@@ -16,4 +17,12 @@ func withDataType() {
 
 	fmt.Println("Nama saya Adalah", name)
 	fmt.Println("Umur saya Adalah", age)
+}
+
+func withoutDataType() {
+	// Variable without data type/type inference
+	var name = "Dhani"
+	var age = 19
+
+	fmt.Printf("%T, %T", name, age)
 }
